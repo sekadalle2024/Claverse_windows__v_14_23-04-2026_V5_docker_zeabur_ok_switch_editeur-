@@ -1,7 +1,23 @@
 # 📦 Documentation Déploiement Docker Compose sur Zeabur
 
 **Date de création:** 20 Avril 2026  
+**Dernière mise à jour:** 20 Avril 2026 - Correction erreurs déploiement  
 **Objectif:** Déployer Claraverse (Frontend + Backend) via Docker Compose sur Zeabur
+
+---
+
+## ⚡ CORRECTION EN COURS (20 Avril 2026)
+
+> **🚨 IMPORTANT:** Des erreurs de déploiement ont été identifiées et corrigées.
+> 
+> **Action immédiate:** Lire [START_HERE_20_AVRIL_2026.txt](./START_HERE_20_AVRIL_2026.txt)
+> 
+> **Guide complet:** [QUICK_FIX_DEPLOIEMENT_20_AVRIL_2026.txt](./QUICK_FIX_DEPLOIEMENT_20_AVRIL_2026.txt)
+
+### Problèmes Corrigés
+
+- ✅ **Frontend:** Erreur nginx "events directive" → Fichier nginx.conf supprimé
+- ⏳ **Backend:** Configuration service incorrecte → À corriger dans Zeabur Dashboard
 
 ---
 
@@ -20,6 +36,17 @@ Cette documentation complète vous guide pour déployer votre application Clarav
 
 ## 📚 Documentation
 
+### 🚨 Documents de Correction (20 Avril 2026)
+
+| Document | Description | Priorité |
+|----------|-------------|----------|
+| [START_HERE_20_AVRIL_2026.txt](./START_HERE_20_AVRIL_2026.txt) | Action immédiate | ⭐⭐⭐ |
+| [QUICK_FIX_DEPLOIEMENT_20_AVRIL_2026.txt](./QUICK_FIX_DEPLOIEMENT_20_AVRIL_2026.txt) | Guide rapide (12 min) | ⭐⭐⭐ |
+| [00_LIRE_MAINTENANT_CORRECTION_20_AVRIL_2026.txt](./00_LIRE_MAINTENANT_CORRECTION_20_AVRIL_2026.txt) | Vue d'ensemble | ⭐⭐⭐ |
+| [00_INDEX_CORRECTION_DEPLOIEMENT_20_AVRIL_2026.md](./00_INDEX_CORRECTION_DEPLOIEMENT_20_AVRIL_2026.md) | Index complet | ⭐⭐ |
+| [00_CORRECTION_NGINX_CONF_20_AVRIL_2026.txt](./00_CORRECTION_NGINX_CONF_20_AVRIL_2026.txt) | Détails frontend | ⭐⭐ |
+| [00_ANALYSE_ERREUR_BACKEND_20_AVRIL_2026.txt](./00_ANALYSE_ERREUR_BACKEND_20_AVRIL_2026.txt) | Détails backend | ⭐⭐ |
+
 ### Documents Principaux
 
 | Document | Description | Temps de lecture |
@@ -34,6 +61,7 @@ Cette documentation complète vous guide pour déployer votre application Clarav
 
 | Script | Description | Usage |
 |--------|-------------|-------|
+| **[push-correction-nginx-zeabur.ps1](./Scripts/push-correction-nginx-zeabur.ps1)** | **Push corrections Zeabur** | `.\Doc zeabur docker\Scripts\push-correction-nginx-zeabur.ps1` |
 | [create-docker-compose.ps1](./Scripts/create-docker-compose.ps1) | Génère docker-compose.yml | `.\Scripts\create-docker-compose.ps1` |
 | [test-docker-local.ps1](./Scripts/test-docker-local.ps1) | Teste le déploiement local | `.\Scripts\test-docker-local.ps1` |
 
@@ -233,6 +261,14 @@ git push origin main
 ---
 
 ## 📝 Changelog
+
+### Version 1.1.0 (20 Avril 2026) - Correction Déploiement
+
+- ✅ Identification et correction erreur nginx frontend
+- ✅ Analyse erreur configuration backend
+- ✅ Création documentation de correction complète
+- ✅ Script automatique de push des corrections
+- ✅ Guide rapide de résolution (12 minutes)
 
 ### Version 1.0.0 (20 Avril 2026)
 

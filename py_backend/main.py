@@ -102,6 +102,14 @@ try:
 except ImportError as e:
     logger.warning(f"⚠️ Google Drive PDF Proxy not available: {e}")
 
+# Import and include the Editeur router (Test de switch backend)
+try:
+    from endpoint_editeur import router as editeur_router
+    app.include_router(editeur_router)
+    logger.info("✅ Endpoint Editeur router loaded successfully")
+except ImportError as e:
+    logger.warning(f"⚠️ Endpoint Editeur not available: {e}")
+
 # Import and include the Word Export router
 try:
     from word_export import router as word_router

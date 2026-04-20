@@ -20,7 +20,7 @@
   const LOCAL_BACKEND   = 'http://localhost:5000';
   const CLOUD_BACKEND   = 'https://pybackend.zeabur.app';
   const LOCAL_FRONTEND  = 'http://localhost:5173';
-  const CLOUD_FRONTEND  = 'https://prclaravi.netlify.app';
+  const CLOUD_FRONTEND  = 'https://prclaravi.zeabur.app';
 
   // Exposition globale
   window.CLARA_BACKEND_URL  = isLocalDev ? LOCAL_BACKEND  : CLOUD_BACKEND;

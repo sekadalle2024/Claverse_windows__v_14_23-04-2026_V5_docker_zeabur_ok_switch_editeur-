@@ -29,18 +29,18 @@ COPY . .
 # Create data directory
 RUN mkdir -p /app/data
 
-# Set environment variables
+# Set environment variables (Zeabur uses port 8080)
 ENV HOST="0.0.0.0" \
-    PORT=7860 \
+    PORT=8080 \
     PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1
 
-# Expose port (Hugging Face uses 7860)
-EXPOSE 7860
+# Expose port (Zeabur uses 8080)
+EXPOSE 8080
 
 # Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:7860/health || exit 1
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD curl -f http://localhost:8080/health || exit 1
 
 # Run the application
-CMD ["python", "main.py", "--host", "0.0.0.0", "--port", "7860"] 
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080", "--workers", "1"] 

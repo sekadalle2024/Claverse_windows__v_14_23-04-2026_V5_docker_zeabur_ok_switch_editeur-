@@ -28,7 +28,7 @@
         },
         n8nEndpoint: 'https://barow52161.app.n8n.cloud/webhook/cia_cours_gemini',
         n8nEndpointProgramme: 'https://0ngdph0y.rpcld.co/webhook/template',
-        pandasEndpoint: 'http://localhost:5000/pandas/analysis/complete',
+        pandasEndpoint: (window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/pandas/analysis/complete',
         googleDrive: {
             clientId: '670586698862-sc9ppt7he9niib2t4l3roufonqn9ion0.apps.googleusercontent.com',
             clientSecret: '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Contenu'
@@ -514,7 +514,7 @@
 
         // Appel API backend Pandas (obligatoire)
         try {
-            const backendUrl = CONFIG.pandasEndpoint || 'http://localhost:5000/pandas/analysis/complete';
+            const backendUrl = CONFIG.pandasEndpoint || ((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/pandas/analysis/complete');
             console.log('🔄 [PANDAS] Appel API backend:', backendUrl);
 
             const response = await fetch(backendUrl, {

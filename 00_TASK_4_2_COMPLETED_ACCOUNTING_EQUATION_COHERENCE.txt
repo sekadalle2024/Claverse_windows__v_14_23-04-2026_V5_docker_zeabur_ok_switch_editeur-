@@ -1,0 +1,181 @@
+================================================================================
+TASK 4.2 COMPLETED: Property Test for Accounting Equation Coherence
+================================================================================
+
+Date: April 21, 2026
+Status: ✅ COMPLETED
+Task: 4.2 Write property test for accounting equation coherence
+
+================================================================================
+WHAT WAS ACCOMPLISHED
+================================================================================
+
+✅ Created comprehensive property-based test for Property 7
+✅ Validates Requirements 3.1, 3.2, 3.3, 3.4, 3.5
+✅ All 10 tests passing (7 property tests + 3 unit tests)
+✅ 550+ examples generated and tested
+✅ Documentation created
+
+================================================================================
+FILES CREATED
+================================================================================
+
+1. py_backend/Doc calcul notes annexes/Tests/test_movement_calculator_coherence.py
+   - Main test file with property-based tests
+   - 7 property tests covering all aspects of accounting equation
+   - 3 unit tests for specific scenarios
+   - 2 Hypothesis strategies for generating test data
+
+2. py_backend/Doc calcul notes annexes/Tests/PROPERTY_TEST_ACCOUNTING_EQUATION_COHERENCE_SUMMARY.md
+   - Complete documentation of the property test
+   - Test strategies explained
+   - Requirements mapping
+   - Execution instructions
+
+================================================================================
+PROPERTY TESTED
+================================================================================
+
+Property 7: Accounting Equation Coherence
+
+For any account analyzed, the Movement_Calculator must verify:
+
+    Solde_Cloture = Solde_Ouverture + Augmentations - Diminutions
+
+Where:
+    - Solde_Ouverture = (Solde Débit N-1 - Solde Crédit N-1)
+    - Augmentations = Mouvement Débit N
+    - Diminutions = Mouvement Crédit N
+    - Solde_Cloture = (Solde Débit N - Solde Crédit N)
+
+================================================================================
+TESTS IMPLEMENTED
+================================================================================
+
+1. test_property_accounting_equation_coherence_valid
+   - Tests coherent accounts (equation holds)
+   - 100 examples
+
+2. test_property_accounting_equation_coherence_invalid
+   - Tests incoherent accounts (equation doesn't hold)
+   - 100 examples
+
+3. test_property_solde_ouverture_formula
+   - Validates opening balance formula
+   - 100 examples
+
+4. test_property_augmentations_formula
+   - Validates augmentations formula
+   - 50 examples
+
+5. test_property_diminutions_formula
+   - Validates diminutions formula
+   - 50 examples
+
+6. test_property_solde_cloture_formula
+   - Validates closing balance formula
+   - 50 examples
+
+7. test_property_tolerance_parameter
+   - Validates tolerance handling
+   - 50 examples
+
+8. test_coherence_compte_simple
+   - Unit test: simple debit account
+
+9. test_coherence_compte_crediteur
+   - Unit test: credit account
+
+10. test_incoherence_detectee
+    - Unit test: incoherent account detection
+
+================================================================================
+TEST RESULTS
+================================================================================
+
+Status: ✅ ALL TESTS PASSING
+
+Execution time: ~2.14 seconds
+Tests executed: 10
+Total examples: ~550
+
+Output:
+================================ 10 passed in 2.14s ================================
+
+================================================================================
+HYPOTHESIS STRATEGIES CREATED
+================================================================================
+
+1. st_compte_coherent()
+   - Generates accounts with coherent balances
+   - Guarantees accounting equation holds
+   - Value ranges: 0 to 100M for balances, 0 to 50M for movements
+
+2. st_compte_incoherent()
+   - Generates accounts with incoherent balances
+   - Guarantees significant deviation (> 1.0)
+   - Used to test error detection
+
+================================================================================
+REQUIREMENTS VALIDATED
+================================================================================
+
+✅ Requirement 3.1: Solde d'ouverture calculation
+✅ Requirement 3.2: Augmentations calculation
+✅ Requirement 3.3: Diminutions calculation
+✅ Requirement 3.4: Solde de clôture calculation
+✅ Requirement 3.5: Coherence verification
+
+================================================================================
+HOW TO RUN THE TESTS
+================================================================================
+
+# Run all tests
+python -m pytest "py_backend/Doc calcul notes annexes/Tests/test_movement_calculator_coherence.py" -v
+
+# Run with coverage
+python -m pytest "py_backend/Doc calcul notes annexes/Tests/test_movement_calculator_coherence.py" --cov=Modules.movement_calculator --cov-report=html
+
+# Run specific test
+python -m pytest "py_backend/Doc calcul notes annexes/Tests/test_movement_calculator_coherence.py::test_property_accounting_equation_coherence_valid" -v
+
+================================================================================
+KEY FEATURES
+================================================================================
+
+✓ Property-based testing with Hypothesis
+✓ Automatic generation of 550+ test cases
+✓ Both valid and invalid scenarios covered
+✓ Floating-point precision handling (tolerance 0.01)
+✓ Comprehensive documentation
+✓ Clear error messages for debugging
+✓ Fast execution (~2 seconds)
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+The next task in the implementation plan is:
+
+[ ] Task 4.3 (Optional): Write property test for depreciation account sign inversion
+    - Property 8: Depreciation Account Sign Inversion
+    - Validates Requirements 3.7, 4.4, 4.5
+
+Or proceed to:
+
+[ ] Task 5: Implement VNC_Calculator module
+    - Task 5.1: Create vnc_calculator.py with VNCCalculator class
+    - Task 5.2 (Optional): Write property test for VNC calculation formula
+
+================================================================================
+NOTES
+================================================================================
+
+- All tests use Hypothesis for property-based testing
+- Tolerance of 0.01 is used for floating-point comparisons
+- Tests cover both positive and negative scenarios
+- Documentation includes execution instructions and examples
+- The property test validates the core accounting equation that ensures
+  data integrity across all SYSCOHADA notes annexes
+
+================================================================================

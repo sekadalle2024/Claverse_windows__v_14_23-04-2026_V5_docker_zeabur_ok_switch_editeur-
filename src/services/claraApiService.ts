@@ -31,7 +31,7 @@ export class ClaraApiService {
   // ── n8n endpoint par défaut (router switch-case) ─────────────────────────
   // L'endpoint effectif est résolu dynamiquement dans getN8nEndpoint()
   private readonly n8nDefaultEndpoint =
-    "https://n8nauditpro.zeabur.app/webhook/template";
+    "https://n8nsqlite.zeabur.app/webhook/template";
 
   // Sentinelles internes retournées par le router pour les cas sans appel HTTP
   private readonly SENTINEL_DATABASE = "__INTERNAL__DATABASE__";
@@ -244,67 +244,67 @@ export class ClaraApiService {
   private resolveEndpointFromRouteKey(routeKey: string): string {
     switch (routeKey) {
       case "design":
-        return "https://n8nauditpro.zeabur.app/webhook/integration_windows";
+        return "https://n8nsqlite.zeabur.app/webhook/integration_windows";
       case "n8n_doc":
-        return "https://n8nauditpro.zeabur.app/webhook/n8n_doc";
+        return "https://n8nsqlite.zeabur.app/webhook/n8n_doc";
       case "htlm_processor":
-        return "https://n8nauditpro.zeabur.app/webhook/htlm_processor";
+        return "https://n8nsqlite.zeabur.app/webhook/htlm_processor";
       case "database_endpoint":
-        return "https://n8nauditpro.zeabur.app/webhook/integration_database";
+        return "https://n8nsqlite.zeabur.app/webhook/integration_database";
       case "cia_cours":
-        return "https://n8nauditpro.zeabur.app/webhook/cia_cours_gemini";
+        return "https://n8nsqlite.zeabur.app/webhook/cia_cours_gemini";
       case "cia_qcm":
-        return "https://n8nauditpro.zeabur.app/webhook/qcm_cia_gemini";
+        return "https://n8nsqlite.zeabur.app/webhook/qcm_cia_gemini";
       case "cia_synthese":
-        return "https://n8nauditpro.zeabur.app/webhook/synthese_cia_gemini";
+        return "https://n8nsqlite.zeabur.app/webhook/synthese_cia_gemini";
       case "algorithme":
-        return "https://n8nauditpro.zeabur.app/webhook/algorithme";
+        return "https://n8nsqlite.zeabur.app/webhook/algorithme";
       case "visualisation":
-        return "https://n8nauditpro.zeabur.app/webhook/visualisation";
+        return "https://n8nsqlite.zeabur.app/webhook/visualisation";
       case "notification":
         return this.SENTINEL_NOTIFICATION;
       case "document":
-        return "https://n8nauditpro.zeabur.app/webhook/integration_document";
+        return "https://n8nsqlite.zeabur.app/webhook/integration_document";
       case "implementation_modelisation":
-        return "https://n8nauditpro.zeabur.app/webhook/implementation_modelisation";
+        return "https://n8nsqlite.zeabur.app/webhook/implementation_modelisation";
       case "implementation_programme_controle":
-        return "https://n8nauditpro.zeabur.app/webhook/implementation_programme_controle";
+        return "https://n8nsqlite.zeabur.app/webhook/implementation_programme_controle";
       case "implementation_cartographie":
-        return "https://n8nauditpro.zeabur.app/webhook/implementation_cartographie";
+        return "https://n8nsqlite.zeabur.app/webhook/implementation_cartographie";
       case "programme_controle_comptes":
-        return "https://n8nauditpro.zeabur.app/webhook/programme_controle_comptes";
+        return "https://n8nsqlite.zeabur.app/webhook/programme_controle_comptes";
       case "revue_manager":
-        return "https://n8nauditpro.zeabur.app/webhook/revue_manager";
+        return "https://n8nsqlite.zeabur.app/webhook/revue_manager";
       case "lead_balance":
         return this.SENTINEL_LEAD_BALANCE;
       case "regles_comptables":
-        return "https://n8nauditpro.zeabur.app/webhook/regles_comptables";
+        return "https://n8nsqlite.zeabur.app/webhook/regles_comptables";
       case "recos_revision":
-        return "https://n8nauditpro.zeabur.app/webhook/recos_revision";
+        return "https://n8nsqlite.zeabur.app/webhook/recos_revision";
       case "etat_fin":
         return this.SENTINEL_ETAT_FIN;
       case "editeur":
         return this.SENTINEL_EDITEUR;
       case "recos_controle_interne":
-        return "https://n8nauditpro.zeabur.app/webhook/recos_contrôle_interne_comptable";
+        return "https://n8nsqlite.zeabur.app/webhook/recos_contrôle_interne_comptable";
       case "recos_revision_comptes":
-        return "https://n8nauditpro.zeabur.app/webhook/recos_revision_compte";
+        return "https://n8nsqlite.zeabur.app/webhook/recos_revision_compte";
       case "rapport_synthese_cac":
-        return "https://n8nauditpro.zeabur.app/webhook/rapport_synthese_cac";
+        return "https://n8nsqlite.zeabur.app/webhook/rapport_synthese_cac";
       case "methodo_audit":
-        return "https://n8nauditpro.zeabur.app/webhook/methodo_audit";
+        return "https://n8nsqlite.zeabur.app/webhook/methodo_audit";
       case "guide_des_commandes":
-        return "https://n8nauditpro.zeabur.app/webhook/guide_des_commandes";
+        return "https://n8nsqlite.zeabur.app/webhook/guide_des_commandes";
       case "guide_intelligent":
-        return "https://n8nauditpro.zeabur.app/webhook/guide_intelligent";
+        return "https://n8nsqlite.zeabur.app/webhook/guide_intelligent";
       case "guide_menu_contextuel":
-        return "https://n8nauditpro.zeabur.app/webhook/guide_menu_contextuel";
+        return "https://n8nsqlite.zeabur.app/webhook/guide_menu_contextuel";
       case "guide_produit":
-        return "https://n8nauditpro.zeabur.app/webhook/guide_produit";
+        return "https://n8nsqlite.zeabur.app/webhook/guide_produit";
       case "methodo_revision":
-        return "https://n8nauditpro.zeabur.app/webhook/methodo_revision";
+        return "https://n8nsqlite.zeabur.app/webhook/methodo_revision";
       case "heatmap_risque":
-        return "https://n8nauditpro.zeabur.app/webhook/heatmap_risque";
+        return "https://n8nsqlite.zeabur.app/webhook/heatmap_risque";
       case "template_table_unicolonne":
       case "template_table_simple":
       case "template_table_etape_de_mission":
@@ -1840,7 +1840,7 @@ export class ClaraApiService {
         const content =
           "| Database |\n" +
           "|----------|\n" +
-          "| [Ouvrir le formulaire Database](https://n8nauditpro.zeabur.app/webhook/database) |";
+          "| [Ouvrir le formulaire Database](https://n8nsqlite.zeabur.app/webhook/database) |";
         return {
           id: `${Date.now()}-database`,
           role: "assistant",

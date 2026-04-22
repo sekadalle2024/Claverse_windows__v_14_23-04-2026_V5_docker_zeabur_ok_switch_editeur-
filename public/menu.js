@@ -1,4 +1,4 @@
-﻿﻿// Menu contextuel (Core) pour les tables ClaraVerse
+// Menu contextuel (Core) pour les tables ClaraVerse
 // Version 9.3 - Export Word via backend Python + fallback JS
 
 (function () {
@@ -4111,7 +4111,7 @@
         }
 
         // Appeler le backend Python
-        const response = await fetch('http://localhost:5000/api/word/export', {
+        const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/api/word/export', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ tables: tablesData })
@@ -4231,7 +4231,7 @@
 
         try {
           // Appeler le backend Python
-          const response = await fetch('http://localhost:5000/api/word/export-rapport', {
+          const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/api/word/export-rapport', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(requestData)
@@ -4663,7 +4663,7 @@
 
         try {
           // Appeler le backend Python
-          const response = await fetch('http://localhost:5000/api/word/export-frap', {
+          const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/api/word/export-frap', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(requestData)
@@ -5086,7 +5086,7 @@
         let blob;
         try {
           // Essayer d'utiliser le backend Python
-          const response = await fetch('http://localhost:5000/api/word/export', {
+          const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/api/word/export', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ tables: tablesData, filename })
@@ -7079,7 +7079,7 @@
         let targetColumn = null;
         headers.forEach(h => { if (h.toLowerCase() === 'ecart' || h.toLowerCase() === 'écart') targetColumn = h; });
 
-        const response = await fetch('http://127.0.0.1:5000/pandas-agent/process-json', {
+        const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/pandas-agent/process-json', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ tables: [{ tableId, headers, rows }], targetTableId: tableId, action: 'calculate_ecart', targetColumn })
@@ -7155,7 +7155,7 @@
         console.log("📊 [Lead Balance] Fichier encodé en base64:", fileBase64.length, "caractères");
 
         // Envoyer vers le backend Python
-        const response = await fetch('http://127.0.0.1:5000/lead-balance/process-excel', {
+        const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/lead-balance/process-excel', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -7595,7 +7595,7 @@
         console.log("📈 [États Financiers] Données extraites:", tableData.headers, tableData.rows.length, "lignes");
 
         // Envoyer vers le backend Python
-        const response = await fetch('http://127.0.0.1:5000/etats-financiers/calculate', {
+        const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/etats-financiers/calculate', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -7676,7 +7676,7 @@
         const fileBase64 = await this.readFileAsBase64(file);
 
         // Envoyer directement vers l'endpoint États Financiers
-        const response = await fetch('http://127.0.0.1:5000/etats-financiers/calculate-excel', {
+        const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/etats-financiers/calculate-excel', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -8112,7 +8112,7 @@
 
         console.log(`🎲 [Échantillonnage] Envoi requête ${method}:`, payload);
 
-        const response = await fetch('http://127.0.0.1:5000/echantillonnage/sample', {
+        const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/echantillonnage/sample', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
@@ -8292,7 +8292,7 @@
       try {
         this.showQuickNotification("🔄 Calcul de la taille d'échantillon...");
 
-        const response = await fetch('http://127.0.0.1:5000/echantillonnage/calculate-size', {
+        const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/echantillonnage/calculate-size', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -8349,7 +8349,7 @@
 
         console.log(`🔍 [Analyse] Envoi requête ${method}:`, payload);
 
-        const response = await fetch('http://127.0.0.1:5000/echantillonnage/analyze', {
+        const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/echantillonnage/analyze', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
@@ -8858,7 +8858,7 @@
 
         try {
           // Appeler le backend Python FINAL (version avec template + contenu complet)
-          const response = await fetch('http://localhost:5000/export-synthese-cac-final', {
+          const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/export-synthese-cac-final', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(requestData)
@@ -9347,7 +9347,7 @@
           date_rapport: new Date().toISOString().split('T')[0]
         };
 
-        const response = await fetch('http://localhost:5000/api/word/export-synthese-cac', {
+        const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/api/word/export-synthese-cac', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(requestData)
@@ -9395,7 +9395,7 @@
           date_rapport: new Date().toISOString().split('T')[0]
         };
 
-        const response = await fetch('http://localhost:5000/api/word/export-synthese-cac', {
+        const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/api/word/export-synthese-cac', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(requestData)

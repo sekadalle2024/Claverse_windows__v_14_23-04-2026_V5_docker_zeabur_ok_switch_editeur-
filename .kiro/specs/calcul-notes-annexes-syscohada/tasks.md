@@ -49,16 +49,16 @@ This implementation plan creates a modular Python system to automate the calcula
     - **Property 4: Account Filtering by Root**
     - **Validates: Requirements 2.1, 2.5**
 
-  - [-] 3.3 Write property test for account extraction completeness
+  - [x] 3.3 Write property test for account extraction completeness
     - **Property 5: Account Extraction Completeness**
     - **Validates: Requirements 2.2, 2.6**
 
-  - [ ]* 3.4 Write property test for missing account handling
+  - [x] 3.4 Write property test for missing account handling
     - **Property 6: Missing Account Handling**
     - **Validates: Requirements 2.3, 8.1**
 
-- [ ] 4. Implement Movement_Calculator module
-  - [ ] 4.1 Create movement_calculator.py with MovementCalculator class
+- [x] 4. Implement Movement_Calculator module
+  - [x] 4.1 Create movement_calculator.py with MovementCalculator class
     - Implement calculer_solde_ouverture() method
     - Implement calculer_augmentations() method
     - Implement calculer_diminutions() method
@@ -67,16 +67,16 @@ This implementation plan creates a modular Python system to automate the calcula
     - Implement calculer_mouvements_amortissement() with sign inversion for depreciation accounts
     - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7_
 
-  - [ ]* 4.2 Write property test for accounting equation coherence
+  - [x] 4.2 Write property test for accounting equation coherence
     - **Property 7: Accounting Equation Coherence**
     - **Validates: Requirements 3.1, 3.2, 3.3, 3.4, 3.5**
 
-  - [ ]* 4.3 Write property test for depreciation account sign inversion
+  - [x] 4.3 Write property test for depreciation account sign inversion
     - **Property 8: Depreciation Account Sign Inversion**
     - **Validates: Requirements 3.7, 4.4, 4.5**
 
 - [ ] 5. Implement VNC_Calculator module
-  - [ ] 5.1 Create vnc_calculator.py with VNCCalculator class
+  - [x] 5.1 Create vnc_calculator.py with VNCCalculator class
     - Implement calculer_vnc_ouverture() method
     - Implement calculer_vnc_cloture() method
     - Implement extraire_dotations() method for depreciation charges
@@ -84,15 +84,15 @@ This implementation plan creates a modular Python system to automate the calcula
     - Implement valider_vnc() method to check VNC >= 0
     - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7_
 
-  - [ ]* 5.2 Write property test for VNC calculation formula
+  - [-] 5.2 Write property test for VNC calculation formula
     - **Property 9: VNC Calculation Formula**
     - **Validates: Requirements 4.1, 4.2, 4.6**
 
-- [ ] 6. Checkpoint - Ensure core calculation modules work correctly
+- [x] 6. Checkpoint - Ensure core calculation modules work correctly
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 7. Implement HTML_Generator module
-  - [ ] 7.1 Create html_generator.py with HTMLGenerator class
+  - [x] 7.1 Create html_generator.py with HTMLGenerator class
     - Implement __init__(titre_note: str, numero_note: str) method
     - Implement generer_html(df: pd.DataFrame, colonnes_config: Dict) method
     - Implement generer_entetes() method for grouped headers
@@ -101,12 +101,12 @@ This implementation plan creates a modular Python system to automate the calcula
     - Implement appliquer_style_css() method with SYSCOHADA styling
     - _Requirements: 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7_
 
-  - [ ]* 7.2 Write property test for HTML generation conformity
+  - [-] 7.2 Write property test for HTML generation conformity
     - **Property 11: HTML Generation Conformity**
     - **Validates: Requirements 6.2, 6.3, 6.4, 6.5, 6.6**
 
 - [ ] 8. Implement Excel_Exporter module
-  - [ ] 8.1 Create excel_exporter.py with ExcelExporter class
+  - [x] 8.1 Create excel_exporter.py with ExcelExporter class
     - Implement __init__(fichier_sortie: str) method
     - Implement exporter_note() method for single note export
     - Implement exporter_toutes_notes() method for batch export
@@ -114,7 +114,7 @@ This implementation plan creates a modular Python system to automate the calcula
     - Implement sauvegarder() method with timestamped filename
     - _Requirements: 9.1, 9.2, 9.3, 9.4, 9.5, 9.6, 9.7_
 
-  - [ ]* 8.2 Write property test for Excel export structure preservation
+  - [-] 8.2 Write property test for Excel export structure preservation
     - **Property 15: Excel Export Structure Preservation**
     - **Validates: Requirements 9.1, 9.2, 9.3, 9.4, 9.5**
 

@@ -1,0 +1,129 @@
+================================================================================
+TASK 3.4 COMPLETED: Property Test for Missing Account Handling
+================================================================================
+
+Date: 21 Avril 2026
+Status: ✅ COMPLETED
+Test Results: 10/10 PASSED
+
+================================================================================
+PROPERTY TESTED
+================================================================================
+
+Property 6: Missing Account Handling
+
+For any account root that does not exist in a balance, the Account_Extractor
+must return a dictionary with all 6 values set to 0.0 without raising exceptions.
+
+Validates: Requirements 2.3, 8.1
+
+================================================================================
+FILES CREATED
+================================================================================
+
+1. py_backend/Doc calcul notes annexes/Tests/test_account_extractor_missing_accounts.py
+   - Property-based tests using Hypothesis (3 tests)
+   - Unit tests for edge cases (5 tests)
+   - Regression tests (2 tests)
+   - Total: 10 tests
+
+2. py_backend/Doc calcul notes annexes/Tests/PROPERTY_TEST_MISSING_ACCOUNT_HANDLING_SUMMARY.md
+   - Comprehensive test documentation
+   - Test results and coverage analysis
+   - Implementation details
+
+================================================================================
+TEST COVERAGE
+================================================================================
+
+Property-Based Tests:
+✅ test_property_missing_account_returns_zeros
+✅ test_property_multiple_missing_accounts_returns_zeros
+✅ test_property_mixed_existing_and_missing_accounts
+
+Unit Tests:
+✅ test_missing_account_with_simple_balance
+✅ test_missing_account_empty_string
+✅ test_missing_account_special_characters
+✅ test_missing_accounts_empty_list
+✅ test_missing_account_case_sensitivity
+
+Regression Tests:
+✅ test_regression_missing_account_does_not_modify_balance
+✅ test_regression_missing_account_consistent_results
+
+================================================================================
+KEY VALIDATIONS
+================================================================================
+
+Requirement 2.3: Missing Account Handling
+✅ Returns zeros for non-existent accounts
+✅ No exceptions raised
+✅ Correct dictionary structure
+✅ All values are float type
+
+Requirement 8.1: Graceful Degradation
+✅ No crashes with missing accounts
+✅ Balance immutability preserved
+✅ Multiple missing accounts handled
+✅ Edge cases handled correctly
+
+================================================================================
+TEST EXECUTION
+================================================================================
+
+Command:
+python -m pytest "py_backend/Doc calcul notes annexes/Tests/test_account_extractor_missing_accounts.py" -v
+
+Results:
+=============================== 10 passed in 24.83s ================================
+
+All tests passed successfully!
+
+================================================================================
+EDGE CASES TESTED
+================================================================================
+
+✅ Non-existent single account root
+✅ Non-existent multiple account roots
+✅ Empty string as account root
+✅ Special characters as account root (@@@, ***, ---)
+✅ Empty list of account roots
+✅ Alphabetic characters as account root
+✅ Mixed existing and non-existent accounts
+✅ Balance immutability after extraction
+✅ Idempotence of extraction operations
+
+================================================================================
+HYPOTHESIS CONFIGURATION
+================================================================================
+
+Profile: default
+Max Examples: 100
+Deadline: 60 seconds
+Strategies:
+- st_balance(): Generates random balances with 10-100 accounts
+- st_compte_racine(): Generates valid SYSCOHADA account roots
+
+================================================================================
+TASK COMPLETION STATUS
+================================================================================
+
+Task 3: Implement Account_Extractor module
+  ✅ 3.1 Create account_extractor.py - COMPLETED
+  ✅ 3.2 Write property test for account filtering - COMPLETED
+  ✅ 3.3 Write property test for account extraction completeness - COMPLETED
+  ✅ 3.4 Write property test for missing account handling - COMPLETED
+
+All subtasks of Task 3 are now complete!
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+⏭️ Task 4: Implement Movement_Calculator module
+   - 4.1 Create movement_calculator.py
+   - 4.2 Write property test for accounting equation coherence (optional)
+   - 4.3 Write property test for depreciation account sign inversion (optional)
+
+================================================================================

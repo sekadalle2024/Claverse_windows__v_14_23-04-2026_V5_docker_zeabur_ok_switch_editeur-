@@ -19,7 +19,7 @@ import logging
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
-router = APIRouter()
+router = APIRouter(prefix="/api/word")
 
 # Chemin vers le template - Utiliser un document vide si template non disponible
 TEMPLATE_PATH = None  # Pas de template, génération programmatique

@@ -1,0 +1,41 @@
+{
+  "note": "3A",
+  "titre": "Immobilisations incorporelles",
+  "date_generation": "2026-04-23T13:07:48.286183",
+  "fichier_balance": "P000 -BALANCE DEMO N_N-1_N-2.xlsx",
+  "hash_md5_balance": "",
+  "lignes": [
+    {
+      "libelle": "Frais de recherche et de développement",
+      "montant": 1500000.0,
+      "comptes_sources": [
+        {
+          "compte": "211",
+          "intitule": "Frais de recherche et de développement",
+          "valeur": 1500000.0,
+          "type_valeur": "brut_ouverture"
+        }
+      ],
+      "timestamp": "2026-04-23T13:07:48.412328"
+    },
+    {
+      "libelle": "Amortissements frais R&D",
+      "montant": 300000.0,
+      "comptes_sources": [
+        {
+          "compte": "2811",
+          "intitule": "Amortissements frais de recherche",
+          "valeur": 300000.0,
+          "type_valeur": "amort_ouverture"
+        }
+      ],
+      "timestamp": "2026-04-23T13:07:48.412353"
+    }
+  ],
+  "total": {
+    "brut_ouverture": 5000000.0,
+    "brut_cloture": 5500000.0,
+    "vnc_ouverture": 4000000.0,
+    "vnc_cloture": 4200000.0
+  }
+}

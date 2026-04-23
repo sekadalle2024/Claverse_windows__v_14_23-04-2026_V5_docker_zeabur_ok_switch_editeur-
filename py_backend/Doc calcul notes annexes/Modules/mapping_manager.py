@@ -68,12 +68,14 @@ class MappingManager:
         """
         Retourne les racines de comptes pour un poste.
         
+        Si plusieurs entrées ont le même libellé, retourne toutes les racines combinées.
+        
         Args:
             poste: Nom du poste (ex: "Immobilisations incorporelles")
             section: Section (bilan_actif, bilan_passif, charges, produits)
             
         Returns:
-            Liste des racines de comptes
+            Liste des racines de comptes (dédupliquée)
         """
         if section not in self.correspondances:
             logger.warning(f"Section '{section}' introuvable")
@@ -81,6 +83,27 @@ class MappingManager:
         
         section_data = self.correspondances[section]
         
+        # Gérer le format liste (nouveau format)
+        if isinstance(section_data, list):
+            racines_trouvees = []
+            for item in section_data:
+                if isinstance(item, dict) and item.get('libelle') == poste:
+                    racines_trouvees.extend(item.get('racines', []))
+            
+            if not racines_trouvees:
+                logger.warning(f"Poste '{poste}' introuvable dans la section '{section}'")
+                return []
+            
+            # Dédupliquer tout en préservant l'ordre
+            seen = set()
+            result = []
+            for racine in racines_trouvees:
+                if racine not in seen:
+                    seen.add(racine)
+                    result.append(racine)
+            return result
+        
+        # Gérer le format dict (ancien format)
         if poste not in section_data:
             logger.warning(f"Poste '{poste}' introuvable dans la section '{section}'")
             return []
@@ -114,6 +137,16 @@ class MappingManager:
         
         section_data = self.correspondances[section]
         
+        # Gérer le format liste (nouveau format)
+        if isinstance(section_data, list):
+            for item in section_data:
+                if isinstance(item, dict) and item.get('libelle') == poste:
+                    # Dans le nouveau format, on ne distingue pas brut/amort
+                    # On retourne les racines comme brut, et liste vide pour amort
+                    return item.get('racines', []), []
+            return [], []
+        
+        # Gérer le format dict (ancien format)
         if poste not in section_data:
             return [], []
         
@@ -160,10 +193,32 @@ class MappingManager:
             racines: Liste des racines de comptes
         """
         if section not in self.correspondances:
-            self.correspondances[section] = {}
+            self.correspondances[section] = []
         
-        self.correspondances[section][poste] = racines
-        logger.info(f"✓ Correspondance ajoutée: {section}.{poste}")
+        section_data = self.correspondances[section]
+        
+        # Gérer le format liste (nouveau format)
+        if isinstance(section_data, list):
+            # Vérifier si le poste existe déjà
+            for item in section_data:
+                if isinstance(item, dict) and item.get('libelle') == poste:
+                    # Mettre à jour les racines existantes
+                    item['racines'] = racines
+                    logger.info(f"✓ Correspondance mise à jour: {section}.{poste}")
+                    return
+            
+            # Ajouter un nouveau poste
+            ref = f"Z{len(section_data)}"  # Générer une référence automatique
+            section_data.append({
+                "ref": ref,
+                "libelle": poste,
+                "racines": racines
+            })
+            logger.info(f"✓ Correspondance ajoutée: {section}.{poste}")
+        else:
+            # Gérer le format dict (ancien format)
+            section_data[poste] = racines
+            logger.info(f"✓ Correspondance ajoutée: {section}.{poste}")
     
     def sauvegarder(self):
         """Sauvegarde les correspondances dans le fichier JSON."""

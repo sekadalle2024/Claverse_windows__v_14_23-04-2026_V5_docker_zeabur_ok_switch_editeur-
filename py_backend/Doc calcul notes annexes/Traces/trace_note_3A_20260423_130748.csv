@@ -1,0 +1,3 @@
+﻿Note;Titre;Date Génération;Fichier Balance;Hash MD5;Libellé Ligne;Montant;Compte Source;Intitulé Compte;Valeur Compte;Type Valeur
+3A;Immobilisations incorporelles;2026-04-23T13:07:48.286183;P000 -BALANCE DEMO N_N-1_N-2.xlsx;;Frais de recherche et de développement;1500000.0;211;Frais de recherche et de développement;1500000.0;brut_ouverture
+3A;Immobilisations incorporelles;2026-04-23T13:07:48.286183;P000 -BALANCE DEMO N_N-1_N-2.xlsx;;Amortissements frais R&D;300000.0;2811;Amortissements frais de recherche;300000.0;amort_ouverture

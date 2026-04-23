@@ -21,7 +21,7 @@ from pathlib import Path
 import shutil
 
 logger = logging.getLogger(__name__)
-router = APIRouter()
+router = APIRouter(prefix="/api/word")
 
 # Chemin vers le template
 TEMPLATE_PATH = Path(__file__).parent.parent / "Doc export rapport" / "template final de [Export Synthese CAC].doc"

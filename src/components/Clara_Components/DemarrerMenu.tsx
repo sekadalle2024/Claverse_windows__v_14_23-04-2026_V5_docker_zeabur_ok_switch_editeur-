@@ -66,6 +66,7 @@ interface TestItem {
   label: string;
   processus: string;
   command: string;
+  modes?: ModeItem[];
 }
 
 interface CycleComptable {
@@ -1740,7 +1741,81 @@ Contenu de [Contexte de base]
 [Processus] = Trésorerie
 [test] = AA040
 [reference] = Rapprochements
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA040
+[reference] = Rapprochements
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA040
+[reference] = Rapprochements
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA040
+[reference] = Rapprochements
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA040
+[reference] = Rapprochements
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA040
+[reference] = Rapprochements
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA040
+[reference] = Rapprochements
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'tresorerie-aa145',
@@ -1751,7 +1826,81 @@ Contenu de [Contexte de base]
 [Processus] = Trésorerie
 [test] = AA145
 [reference] = Test sur les décaissements après la clôture
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA145
+[reference] = Test sur les décaissements après la clôture
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA145
+[reference] = Test sur les décaissements après la clôture
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA145
+[reference] = Test sur les décaissements après la clôture
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA145
+[reference] = Test sur les décaissements après la clôture
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA145
+[reference] = Test sur les décaissements après la clôture
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA145
+[reference] = Test sur les décaissements après la clôture
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'tresorerie-aa160',
@@ -1762,7 +1911,81 @@ Contenu de [Contexte de base]
 [Processus] = Trésorerie
 [test] = AA160
 [reference] = Test sur les décaissements avant la clôture
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA160
+[reference] = Test sur les décaissements avant la clôture
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA160
+[reference] = Test sur les décaissements avant la clôture
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA160
+[reference] = Test sur les décaissements avant la clôture
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA160
+[reference] = Test sur les décaissements avant la clôture
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA160
+[reference] = Test sur les décaissements avant la clôture
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA160
+[reference] = Test sur les décaissements avant la clôture
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'tresorerie-aa200',
@@ -1773,8 +1996,82 @@ Contenu de [Contexte de base]
 [Processus] = Trésorerie
 [test] = AA200
 [reference] = Caisse
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA200
+[reference] = Caisse
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA200
+[reference] = Caisse
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA200
+[reference] = Caisse
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA200
+[reference] = Caisse
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA200
+[reference] = Caisse
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA200
+[reference] = Caisse
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
               ,
               {
                 id: 'tresorerie-aa400',
@@ -1785,7 +2082,81 @@ Contenu de [Contexte de base]
 [Processus] = Trésorerie
 [test] = AA400
 [reference] = Suspens Banque
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA400
+[reference] = Suspens Banque
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA400
+[reference] = Suspens Banque
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA400
+[reference] = Suspens Banque
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA400
+[reference] = Suspens Banque
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA400
+[reference] = Suspens Banque
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA400
+[reference] = Suspens Banque
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'tresorerie-aa465',
@@ -1796,7 +2167,81 @@ Contenu de [Contexte de base]
 [Processus] = Trésorerie
 [test] = AA465
 [reference] = Note de synthèse rapprochement
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA465
+[reference] = Note de synthèse rapprochement
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA465
+[reference] = Note de synthèse rapprochement
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA465
+[reference] = Note de synthèse rapprochement
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA465
+[reference] = Note de synthèse rapprochement
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA465
+[reference] = Note de synthèse rapprochement
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA465
+[reference] = Note de synthèse rapprochement
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'tresorerie-aa02',
@@ -1807,7 +2252,81 @@ Contenu de [Contexte de base]
 [Processus] = Trésorerie
 [test] = AA02
 [reference] = Feuilles maîtresses-TRESORERIE
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA02
+[reference] = Feuilles maîtresses-TRESORERIE
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA02
+[reference] = Feuilles maîtresses-TRESORERIE
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA02
+[reference] = Feuilles maîtresses-TRESORERIE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA02
+[reference] = Feuilles maîtresses-TRESORERIE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA02
+[reference] = Feuilles maîtresses-TRESORERIE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA02
+[reference] = Feuilles maîtresses-TRESORERIE
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'tresorerie-aa02-travaux',
@@ -1818,7 +2337,81 @@ Contenu de [Contexte de base]
 [Processus] = Trésorerie
 [test] = AA02
 [reference] = Travaux analytiques caisse
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA02
+[reference] = Travaux analytiques caisse
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA02
+[reference] = Travaux analytiques caisse
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA02
+[reference] = Travaux analytiques caisse
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA02
+[reference] = Travaux analytiques caisse
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA02
+[reference] = Travaux analytiques caisse
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA02
+[reference] = Travaux analytiques caisse
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'tresorerie-aa03',
@@ -1829,7 +2422,81 @@ Contenu de [Contexte de base]
 [Processus] = Trésorerie
 [test] = AA03
 [reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA03
+[reference] = Revue du Contrôle interne
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA03
+[reference] = Revue du Contrôle interne
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'tresorerie-aa04',
@@ -1840,8 +2507,82 @@ Contenu de [Contexte de base]
 [Processus] = Trésorerie
 [test] = AA04
 [reference] = Revue des techniques comptables
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA04
+[reference] = Revue des techniques comptables
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA04
+[reference] = Revue des techniques comptables
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Trésorerie
+[test] = AA04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
             ]
           },
           {
@@ -1858,7 +2599,81 @@ Contenu de [Contexte de base]
 [Processus] = VENTES
 [test] = BB040
 [reference] = Rapprochement CA
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB040
+[reference] = Rapprochement CA
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB040
+[reference] = Rapprochement CA
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB040
+[reference] = Rapprochement CA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB040
+[reference] = Rapprochement CA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB040
+[reference] = Rapprochement CA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB040
+[reference] = Rapprochement CA
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'ventes-bb145',
@@ -1869,7 +2684,81 @@ Contenu de [Contexte de base]
 [Processus] = VENTES
 [test] = BB145
 [reference] = Test de séparation des exercices ventes
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB145
+[reference] = Test de séparation des exercices ventes
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB145
+[reference] = Test de séparation des exercices ventes
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB145
+[reference] = Test de séparation des exercices ventes
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB145
+[reference] = Test de séparation des exercices ventes
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB145
+[reference] = Test de séparation des exercices ventes
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB145
+[reference] = Test de séparation des exercices ventes
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'ventes-bb160',
@@ -1880,7 +2769,81 @@ Contenu de [Contexte de base]
 [Processus] = VENTES
 [test] = BB160
 [reference] = Test de séparation des exercices avoir
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB160
+[reference] = Test de séparation des exercices avoir
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB160
+[reference] = Test de séparation des exercices avoir
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB160
+[reference] = Test de séparation des exercices avoir
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB160
+[reference] = Test de séparation des exercices avoir
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB160
+[reference] = Test de séparation des exercices avoir
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB160
+[reference] = Test de séparation des exercices avoir
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'ventes-bb300',
@@ -1891,7 +2854,81 @@ Contenu de [Contexte de base]
 [Processus] = VENTES
 [test] = BB300
 [reference] = Test de validation analytique
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB300
+[reference] = Test de validation analytique
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB300
+[reference] = Test de validation analytique
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB300
+[reference] = Test de validation analytique
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB300
+[reference] = Test de validation analytique
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB300
+[reference] = Test de validation analytique
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB300
+[reference] = Test de validation analytique
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'ventes-bb545',
@@ -1902,7 +2939,81 @@ Contenu de [Contexte de base]
 [Processus] = VENTES
 [test] = BB545
 [reference] = Note de synthèse Test de séparation des exercices
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB545
+[reference] = Note de synthèse Test de séparation des exercices
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB545
+[reference] = Note de synthèse Test de séparation des exercices
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB545
+[reference] = Note de synthèse Test de séparation des exercices
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB545
+[reference] = Note de synthèse Test de séparation des exercices
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB545
+[reference] = Note de synthèse Test de séparation des exercices
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB545
+[reference] = Note de synthèse Test de séparation des exercices
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'ventes-bb30',
@@ -1913,8 +3024,82 @@ Contenu de [Contexte de base]
 [Processus] = VENTES
 [test] = BB30
 [reference] = CA-TSE-TVA
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB30
+[reference] = CA-TSE-TVA
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB30
+[reference] = CA-TSE-TVA
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB30
+[reference] = CA-TSE-TVA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB30
+[reference] = CA-TSE-TVA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB30
+[reference] = CA-TSE-TVA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB30
+[reference] = CA-TSE-TVA
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
               ,
               {
                 id: 'ventes-bb20',
@@ -1925,7 +3110,81 @@ Contenu de [Contexte de base]
 [Processus] = VENTES
 [test] = BB20
 [reference] = Rapprochement de solde CA TVA_TSE
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB20
+[reference] = Rapprochement de solde CA TVA_TSE
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB20
+[reference] = Rapprochement de solde CA TVA_TSE
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB20
+[reference] = Rapprochement de solde CA TVA_TSE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB20
+[reference] = Rapprochement de solde CA TVA_TSE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB20
+[reference] = Rapprochement de solde CA TVA_TSE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB20
+[reference] = Rapprochement de solde CA TVA_TSE
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'ventes-bb02',
@@ -1947,7 +3206,81 @@ Contenu de [Contexte de base]
 [Processus] = VENTES
 [test] = BB02
 [reference] = Travaux analytiques CA
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB02
+[reference] = Travaux analytiques CA
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB02
+[reference] = Travaux analytiques CA
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB02
+[reference] = Travaux analytiques CA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB02
+[reference] = Travaux analytiques CA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB02
+[reference] = Travaux analytiques CA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB02
+[reference] = Travaux analytiques CA
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'ventes-bb03',
@@ -1958,7 +3291,81 @@ Contenu de [Contexte de base]
 [Processus] = VENTES
 [test] = BB03
 [reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB03
+[reference] = Revue du Contrôle interne
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB03
+[reference] = Revue du Contrôle interne
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'ventes-bb04',
@@ -1969,8 +3376,82 @@ Contenu de [Contexte de base]
 [Processus] = VENTES
 [test] = BB04
 [reference] = Revue des techniques comptables
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB04
+[reference] = Revue des techniques comptables
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB04
+[reference] = Revue des techniques comptables
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = VENTES
+[test] = BB04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
             ]
           },
           {
@@ -1987,7 +3468,81 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC020
 [reference] = Test sur la centralisation
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC020
+[reference] = Test sur la centralisation
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC020
+[reference] = Test sur la centralisation
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC020
+[reference] = Test sur la centralisation
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC020
+[reference] = Test sur la centralisation
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC020
+[reference] = Test sur la centralisation
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC020
+[reference] = Test sur la centralisation
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'stocks-cc025',
@@ -1998,7 +3553,81 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC025
 [reference] = Test Stock Phys_Théorique
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC025
+[reference] = Test Stock Phys_Théorique
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC025
+[reference] = Test Stock Phys_Théorique
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC025
+[reference] = Test Stock Phys_Théorique
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC025
+[reference] = Test Stock Phys_Théorique
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC025
+[reference] = Test Stock Phys_Théorique
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC025
+[reference] = Test Stock Phys_Théorique
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'stocks-cc030',
@@ -2009,7 +3638,81 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC030
 [reference] = Test Stock Physi_Inventorié
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC030
+[reference] = Test Stock Physi_Inventorié
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC030
+[reference] = Test Stock Physi_Inventorié
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC030
+[reference] = Test Stock Physi_Inventorié
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC030
+[reference] = Test Stock Physi_Inventorié
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC030
+[reference] = Test Stock Physi_Inventorié
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC030
+[reference] = Test Stock Physi_Inventorié
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'stocks-cc035',
@@ -2020,7 +3723,81 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC035
 [reference] = Test Stock PV_Valorisé
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC035
+[reference] = Test Stock PV_Valorisé
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC035
+[reference] = Test Stock PV_Valorisé
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC035
+[reference] = Test Stock PV_Valorisé
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC035
+[reference] = Test Stock PV_Valorisé
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC035
+[reference] = Test Stock PV_Valorisé
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC035
+[reference] = Test Stock PV_Valorisé
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'stocks-cc040',
@@ -2031,7 +3808,81 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC040
 [reference] = Rapprochement de solde BG AAchier stock
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC040
+[reference] = Rapprochement de solde BG AAchier stock
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC040
+[reference] = Rapprochement de solde BG AAchier stock
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC040
+[reference] = Rapprochement de solde BG AAchier stock
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC040
+[reference] = Rapprochement de solde BG AAchier stock
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC040
+[reference] = Rapprochement de solde BG AAchier stock
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC040
+[reference] = Rapprochement de solde BG AAchier stock
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'stocks-cc104',
@@ -2042,8 +3893,82 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC104
 [reference] = Test la variation stock
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC104
+[reference] = Test la variation stock
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC104
+[reference] = Test la variation stock
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC104
+[reference] = Test la variation stock
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC104
+[reference] = Test la variation stock
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC104
+[reference] = Test la variation stock
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC104
+[reference] = Test la variation stock
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
               ,
               {
                 id: 'stocks-cc120',
@@ -2054,7 +3979,81 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC120
 [reference] = Rapprochement de solde Valorisation
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC120
+[reference] = Rapprochement de solde Valorisation
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC120
+[reference] = Rapprochement de solde Valorisation
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC120
+[reference] = Rapprochement de solde Valorisation
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC120
+[reference] = Rapprochement de solde Valorisation
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC120
+[reference] = Rapprochement de solde Valorisation
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC120
+[reference] = Rapprochement de solde Valorisation
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'stocks-cc145',
@@ -2065,7 +4064,81 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC145
 [reference] = Valorisation en CUMP AAN
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC145
+[reference] = Valorisation en CUMP AAN
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC145
+[reference] = Valorisation en CUMP AAN
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC145
+[reference] = Valorisation en CUMP AAN
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC145
+[reference] = Valorisation en CUMP AAN
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC145
+[reference] = Valorisation en CUMP AAN
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC145
+[reference] = Valorisation en CUMP AAN
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'stocks-cc300',
@@ -2076,7 +4149,81 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC300
 [reference] = Provisions Dépréciation
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC300
+[reference] = Provisions Dépréciation
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC300
+[reference] = Provisions Dépréciation
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC300
+[reference] = Provisions Dépréciation
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC300
+[reference] = Provisions Dépréciation
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC300
+[reference] = Provisions Dépréciation
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC300
+[reference] = Provisions Dépréciation
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'stocks-cc02',
@@ -2087,7 +4234,81 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC02
 [reference] = Feuilles maîtresses-STOCKS
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC02
+[reference] = Feuilles maîtresses-STOCKS
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC02
+[reference] = Feuilles maîtresses-STOCKS
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC02
+[reference] = Feuilles maîtresses-STOCKS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC02
+[reference] = Feuilles maîtresses-STOCKS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC02
+[reference] = Feuilles maîtresses-STOCKS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC02
+[reference] = Feuilles maîtresses-STOCKS
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'stocks-cc02-travaux',
@@ -2098,7 +4319,81 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC02
 [reference] = Travaux analytiques -Stocks
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC02
+[reference] = Travaux analytiques -Stocks
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC02
+[reference] = Travaux analytiques -Stocks
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC02
+[reference] = Travaux analytiques -Stocks
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC02
+[reference] = Travaux analytiques -Stocks
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC02
+[reference] = Travaux analytiques -Stocks
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC02
+[reference] = Travaux analytiques -Stocks
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'stocks-cc03',
@@ -2109,7 +4404,81 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC03
 [reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC03
+[reference] = Revue du Contrôle interne
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC03
+[reference] = Revue du Contrôle interne
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'stocks-cc04',
@@ -2120,8 +4489,82 @@ Contenu de [Contexte de base]
 [Processus] = Stock
 [test] = CC04
 [reference] = Revue des techniques comptables
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC04
+[reference] = Revue des techniques comptables
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC04
+[reference] = Revue des techniques comptables
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = Stock
+[test] = CC04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
             ]
           },
           {
@@ -2138,7 +4581,81 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD040
 [reference] = Tableau Mouv immobilisations
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD040
+[reference] = Tableau Mouv immobilisations
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD040
+[reference] = Tableau Mouv immobilisations
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD040
+[reference] = Tableau Mouv immobilisations
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD040
+[reference] = Tableau Mouv immobilisations
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD040
+[reference] = Tableau Mouv immobilisations
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD040
+[reference] = Tableau Mouv immobilisations
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'immobilisations-dd043',
@@ -2149,7 +4666,81 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD043
 [reference] = Tableau mouv Dotations
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD043
+[reference] = Tableau mouv Dotations
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD043
+[reference] = Tableau mouv Dotations
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD043
+[reference] = Tableau mouv Dotations
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD043
+[reference] = Tableau mouv Dotations
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD043
+[reference] = Tableau mouv Dotations
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD043
+[reference] = Tableau mouv Dotations
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'immobilisations-dd045',
@@ -2160,7 +4751,81 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD045
 [reference] = Rapprochement de solde BG AAchier immob
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD045
+[reference] = Rapprochement de solde BG AAchier immob
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD045
+[reference] = Rapprochement de solde BG AAchier immob
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD045
+[reference] = Rapprochement de solde BG AAchier immob
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD045
+[reference] = Rapprochement de solde BG AAchier immob
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD045
+[reference] = Rapprochement de solde BG AAchier immob
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD045
+[reference] = Rapprochement de solde BG AAchier immob
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'immobilisations-dd104',
@@ -2171,7 +4836,81 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD104
 [reference] = Test acquisitions
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD104
+[reference] = Test acquisitions
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD104
+[reference] = Test acquisitions
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD104
+[reference] = Test acquisitions
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD104
+[reference] = Test acquisitions
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD104
+[reference] = Test acquisitions
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD104
+[reference] = Test acquisitions
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'immobilisations-dd120',
@@ -2182,7 +4921,81 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD120
 [reference] = Test sur les cessions
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD120
+[reference] = Test sur les cessions
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD120
+[reference] = Test sur les cessions
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD120
+[reference] = Test sur les cessions
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD120
+[reference] = Test sur les cessions
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD120
+[reference] = Test sur les cessions
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD120
+[reference] = Test sur les cessions
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'immobilisations-dd145',
@@ -2193,8 +5006,82 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD145
 [reference] = Test dotation aux amortissements
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD145
+[reference] = Test dotation aux amortissements
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD145
+[reference] = Test dotation aux amortissements
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD145
+[reference] = Test dotation aux amortissements
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD145
+[reference] = Test dotation aux amortissements
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD145
+[reference] = Test dotation aux amortissements
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD145
+[reference] = Test dotation aux amortissements
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
               ,
               {
                 id: 'immobilisations-dd155',
@@ -2205,7 +5092,81 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD155
 [reference] = IMMOBILISATIONS
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD155
+[reference] = IMMOBILISATIONS
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD155
+[reference] = IMMOBILISATIONS
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD155
+[reference] = IMMOBILISATIONS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD155
+[reference] = IMMOBILISATIONS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD155
+[reference] = IMMOBILISATIONS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD155
+[reference] = IMMOBILISATIONS
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'immobilisations-dd160',
@@ -2216,7 +5177,81 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD160
 [reference] = Test sur les Encours
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD160
+[reference] = Test sur les Encours
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD160
+[reference] = Test sur les Encours
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD160
+[reference] = Test sur les Encours
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD160
+[reference] = Test sur les Encours
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD160
+[reference] = Test sur les Encours
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD160
+[reference] = Test sur les Encours
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'immobilisations-dd180',
@@ -2227,7 +5262,81 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD180
 [reference] = Test entretien charges
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD180
+[reference] = Test entretien charges
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD180
+[reference] = Test entretien charges
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD180
+[reference] = Test entretien charges
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD180
+[reference] = Test entretien charges
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD180
+[reference] = Test entretien charges
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD180
+[reference] = Test entretien charges
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'immobilisations-dd02',
@@ -2238,7 +5347,81 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD02
 [reference] = Feuilles maîtresses-IMMOBILISATIONS
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD02
+[reference] = Feuilles maîtresses-IMMOBILISATIONS
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD02
+[reference] = Feuilles maîtresses-IMMOBILISATIONS
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD02
+[reference] = Feuilles maîtresses-IMMOBILISATIONS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD02
+[reference] = Feuilles maîtresses-IMMOBILISATIONS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD02
+[reference] = Feuilles maîtresses-IMMOBILISATIONS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD02
+[reference] = Feuilles maîtresses-IMMOBILISATIONS
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'immobilisations-dd02-travaux',
@@ -2249,7 +5432,81 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD02
 [reference] = Travaux analytiques -Immo
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD02
+[reference] = Travaux analytiques -Immo
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD02
+[reference] = Travaux analytiques -Immo
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD02
+[reference] = Travaux analytiques -Immo
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD02
+[reference] = Travaux analytiques -Immo
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD02
+[reference] = Travaux analytiques -Immo
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD02
+[reference] = Travaux analytiques -Immo
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'immobilisations-dd03',
@@ -2260,7 +5517,81 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD03
 [reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD03
+[reference] = Revue du Contrôle interne
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD03
+[reference] = Revue du Contrôle interne
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'immobilisations-dd04',
@@ -2271,8 +5602,82 @@ Contenu de [Contexte de base]
 [Processus] = IMMOBILISATIONS
 [test] = DD04
 [reference] = Revue des techniques comptables
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD04
+[reference] = Revue des techniques comptables
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD04
+[reference] = Revue des techniques comptables
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = IMMOBILISATIONS
+[test] = DD04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
             ]
           },
           {
@@ -2289,7 +5694,81 @@ Contenu de [Contexte de base]
 [Processus] = client
 [test] = FE040
 [reference] = Circularisation client
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE040
+[reference] = Circularisation client
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE040
+[reference] = Circularisation client
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE040
+[reference] = Circularisation client
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE040
+[reference] = Circularisation client
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE040
+[reference] = Circularisation client
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE040
+[reference] = Circularisation client
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'clients-fe200',
@@ -2300,7 +5779,81 @@ Contenu de [Contexte de base]
 [Processus] = client
 [test] = FE200
 [reference] = Procédure alternative
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE200
+[reference] = Procédure alternative
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE200
+[reference] = Procédure alternative
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE200
+[reference] = Procédure alternative
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE200
+[reference] = Procédure alternative
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE200
+[reference] = Procédure alternative
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE200
+[reference] = Procédure alternative
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'clients-fe300',
@@ -2311,7 +5864,81 @@ Contenu de [Contexte de base]
 [Processus] = client
 [test] = FE300
 [reference] = Test de séparation des exercices Client
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE300
+[reference] = Test de séparation des exercices Client
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE300
+[reference] = Test de séparation des exercices Client
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE300
+[reference] = Test de séparation des exercices Client
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE300
+[reference] = Test de séparation des exercices Client
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE300
+[reference] = Test de séparation des exercices Client
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE300
+[reference] = Test de séparation des exercices Client
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'clients-fe340',
@@ -2322,7 +5949,81 @@ Contenu de [Contexte de base]
 [Processus] = client
 [test] = FE340
 [reference] = Test de séparation des exercices Avoirs
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE340
+[reference] = Test de séparation des exercices Avoirs
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE340
+[reference] = Test de séparation des exercices Avoirs
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE340
+[reference] = Test de séparation des exercices Avoirs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE340
+[reference] = Test de séparation des exercices Avoirs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE340
+[reference] = Test de séparation des exercices Avoirs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE340
+[reference] = Test de séparation des exercices Avoirs
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'clients-fe345',
@@ -2333,7 +6034,81 @@ Contenu de [Contexte de base]
 [Processus] = client
 [test] = FE345
 [reference] = Créances provisionnées
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE345
+[reference] = Créances provisionnées
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE345
+[reference] = Créances provisionnées
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE345
+[reference] = Créances provisionnées
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE345
+[reference] = Créances provisionnées
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE345
+[reference] = Créances provisionnées
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE345
+[reference] = Créances provisionnées
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'clients-fe360',
@@ -2344,7 +6119,81 @@ Contenu de [Contexte de base]
 [Processus] = client
 [test] = FE360
 [reference] = Revue Balance agée
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE360
+[reference] = Revue Balance agée
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE360
+[reference] = Revue Balance agée
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE360
+[reference] = Revue Balance agée
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE360
+[reference] = Revue Balance agée
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE360
+[reference] = Revue Balance agée
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE360
+[reference] = Revue Balance agée
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'clients-fe02',
@@ -2355,7 +6204,81 @@ Contenu de [Contexte de base]
 [Processus] = client
 [test] = FE02
 [reference] = Feuilles maîtresses-CLIENTS
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE02
+[reference] = Feuilles maîtresses-CLIENTS
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE02
+[reference] = Feuilles maîtresses-CLIENTS
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE02
+[reference] = Feuilles maîtresses-CLIENTS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE02
+[reference] = Feuilles maîtresses-CLIENTS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE02
+[reference] = Feuilles maîtresses-CLIENTS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE02
+[reference] = Feuilles maîtresses-CLIENTS
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'clients-fe02-travaux',
@@ -2366,7 +6289,81 @@ Contenu de [Contexte de base]
 [Processus] = client
 [test] = FE02
 [reference] = Travaux analytiques -Clients
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE02
+[reference] = Travaux analytiques -Clients
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE02
+[reference] = Travaux analytiques -Clients
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE02
+[reference] = Travaux analytiques -Clients
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE02
+[reference] = Travaux analytiques -Clients
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE02
+[reference] = Travaux analytiques -Clients
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE02
+[reference] = Travaux analytiques -Clients
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'clients-fe03',
@@ -2377,7 +6374,81 @@ Contenu de [Contexte de base]
 [Processus] = client
 [test] = FE03
 [reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE03
+[reference] = Revue du Contrôle interne
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE03
+[reference] = Revue du Contrôle interne
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'clients-fe04',
@@ -2388,8 +6459,82 @@ Contenu de [Contexte de base]
 [Processus] = client
 [test] = FE04
 [reference] = Revue des techniques comptables
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE04
+[reference] = Revue des techniques comptables
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = client
+[test] = FE04
+[reference] = Revue des techniques comptables
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = client
+[test] = FE04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
             ]
           },
           {
@@ -2406,7 +6551,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF040
 [reference] = Circularisation fournisseurs
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF040
+[reference] = Circularisation fournisseurs
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF040
+[reference] = Circularisation fournisseurs
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF040
+[reference] = Circularisation fournisseurs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF040
+[reference] = Circularisation fournisseurs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF040
+[reference] = Circularisation fournisseurs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF040
+[reference] = Circularisation fournisseurs
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff041',
@@ -2417,7 +6636,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF041
 [reference] = TEST FNP_BBE
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF041
+[reference] = TEST FNP_BBE
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF041
+[reference] = TEST FNP_BBE
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF041
+[reference] = TEST FNP_BBE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF041
+[reference] = TEST FNP_BBE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF041
+[reference] = TEST FNP_BBE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF041
+[reference] = TEST FNP_BBE
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff045',
@@ -2428,7 +6721,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF045
 [reference] = Rapprochement de solde BA-BG
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF045
+[reference] = Rapprochement de solde BA-BG
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF045
+[reference] = Rapprochement de solde BA-BG
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF045
+[reference] = Rapprochement de solde BA-BG
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF045
+[reference] = Rapprochement de solde BA-BG
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF045
+[reference] = Rapprochement de solde BA-BG
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF045
+[reference] = Rapprochement de solde BA-BG
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff200',
@@ -2439,7 +6806,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF200
 [reference] = Procédure alternative FRS
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF200
+[reference] = Procédure alternative FRS
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF200
+[reference] = Procédure alternative FRS
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF200
+[reference] = Procédure alternative FRS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF200
+[reference] = Procédure alternative FRS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF200
+[reference] = Procédure alternative FRS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF200
+[reference] = Procédure alternative FRS
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff300',
@@ -2450,7 +6891,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF300
 [reference] = Test de séparation des exercices Fournisseurs
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF300
+[reference] = Test de séparation des exercices Fournisseurs
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF300
+[reference] = Test de séparation des exercices Fournisseurs
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF300
+[reference] = Test de séparation des exercices Fournisseurs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF300
+[reference] = Test de séparation des exercices Fournisseurs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF300
+[reference] = Test de séparation des exercices Fournisseurs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF300
+[reference] = Test de séparation des exercices Fournisseurs
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff345',
@@ -2461,7 +6976,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF345
 [reference] = Test de séparation des exercices Avoirs
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF345
+[reference] = Test de séparation des exercices Avoirs
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF345
+[reference] = Test de séparation des exercices Avoirs
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF345
+[reference] = Test de séparation des exercices Avoirs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF345
+[reference] = Test de séparation des exercices Avoirs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF345
+[reference] = Test de séparation des exercices Avoirs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF345
+[reference] = Test de séparation des exercices Avoirs
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff400',
@@ -2472,7 +7061,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF400
 [reference] = Test PCA_CCA
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF400
+[reference] = Test PCA_CCA
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF400
+[reference] = Test PCA_CCA
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF400
+[reference] = Test PCA_CCA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF400
+[reference] = Test PCA_CCA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF400
+[reference] = Test PCA_CCA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF400
+[reference] = Test PCA_CCA
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff420',
@@ -2483,7 +7146,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF420
 [reference] = TEST AAR_AAE
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF420
+[reference] = TEST AAR_AAE
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF420
+[reference] = TEST AAR_AAE
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF420
+[reference] = TEST AAR_AAE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF420
+[reference] = TEST AAR_AAE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF420
+[reference] = TEST AAR_AAE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF420
+[reference] = TEST AAR_AAE
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff445',
@@ -2494,7 +7231,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF445
 [reference] = Test charges récurrentes
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF445
+[reference] = Test charges récurrentes
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF445
+[reference] = Test charges récurrentes
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF445
+[reference] = Test charges récurrentes
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF445
+[reference] = Test charges récurrentes
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF445
+[reference] = Test charges récurrentes
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF445
+[reference] = Test charges récurrentes
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff465',
@@ -2505,7 +7316,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF465
 [reference] = Rapprochement fournisseurs
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF465
+[reference] = Rapprochement fournisseurs
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF465
+[reference] = Rapprochement fournisseurs
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF465
+[reference] = Rapprochement fournisseurs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF465
+[reference] = Rapprochement fournisseurs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF465
+[reference] = Rapprochement fournisseurs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF465
+[reference] = Rapprochement fournisseurs
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff02',
@@ -2516,7 +7401,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF02
 [reference] = Feuilles maîtresses-FOURNISSEURS
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF02
+[reference] = Feuilles maîtresses-FOURNISSEURS
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF02
+[reference] = Feuilles maîtresses-FOURNISSEURS
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF02
+[reference] = Feuilles maîtresses-FOURNISSEURS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF02
+[reference] = Feuilles maîtresses-FOURNISSEURS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF02
+[reference] = Feuilles maîtresses-FOURNISSEURS
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF02
+[reference] = Feuilles maîtresses-FOURNISSEURS
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff02-travaux',
@@ -2527,7 +7486,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF02
 [reference] = Travaux analytiques -Fournisseurs
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF02
+[reference] = Travaux analytiques -Fournisseurs
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF02
+[reference] = Travaux analytiques -Fournisseurs
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF02
+[reference] = Travaux analytiques -Fournisseurs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF02
+[reference] = Travaux analytiques -Fournisseurs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF02
+[reference] = Travaux analytiques -Fournisseurs
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF02
+[reference] = Travaux analytiques -Fournisseurs
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff03',
@@ -2538,7 +7571,81 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF03
 [reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF03
+[reference] = Revue du Contrôle interne
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF03
+[reference] = Revue du Contrôle interne
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'fournisseurs-ff04',
@@ -2549,8 +7656,82 @@ Contenu de [Contexte de base]
 [Processus] = fournisseur
 [test] = FF04
 [reference] = Revue des techniques comptables
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF04
+[reference] = Revue des techniques comptables
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF04
+[reference] = Revue des techniques comptables
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = fournisseur
+[test] = FF04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
             ]
           },
           {
@@ -2567,7 +7748,81 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = FP040
 [reference] = Test CotisationsFiscales
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP040
+[reference] = Test CotisationsFiscales
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP040
+[reference] = Test CotisationsFiscales
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP040
+[reference] = Test CotisationsFiscales
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP040
+[reference] = Test CotisationsFiscales
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP040
+[reference] = Test CotisationsFiscales
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP040
+[reference] = Test CotisationsFiscales
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'personnel-fp045',
@@ -2578,7 +7833,81 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = FP045
 [reference] = Rapprochement de solde BG-livre de paie
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP045
+[reference] = Rapprochement de solde BG-livre de paie
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP045
+[reference] = Rapprochement de solde BG-livre de paie
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP045
+[reference] = Rapprochement de solde BG-livre de paie
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP045
+[reference] = Rapprochement de solde BG-livre de paie
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP045
+[reference] = Rapprochement de solde BG-livre de paie
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP045
+[reference] = Rapprochement de solde BG-livre de paie
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'personnel-fp130',
@@ -2589,7 +7918,81 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = FP130
 [reference] = Validation base imposable
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP130
+[reference] = Validation base imposable
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP130
+[reference] = Validation base imposable
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP130
+[reference] = Validation base imposable
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP130
+[reference] = Validation base imposable
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP130
+[reference] = Validation base imposable
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP130
+[reference] = Validation base imposable
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'personnel-fp145',
@@ -2600,7 +8003,81 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = FP145
 [reference] = Travaux analytiques salaire
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP145
+[reference] = Travaux analytiques salaire
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP145
+[reference] = Travaux analytiques salaire
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP145
+[reference] = Travaux analytiques salaire
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP145
+[reference] = Travaux analytiques salaire
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP145
+[reference] = Travaux analytiques salaire
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP145
+[reference] = Travaux analytiques salaire
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'personnel-nn200',
@@ -2611,7 +8088,81 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = NN200
 [reference] = Provisions congés
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN200
+[reference] = Provisions congés
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN200
+[reference] = Provisions congés
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN200
+[reference] = Provisions congés
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN200
+[reference] = Provisions congés
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN200
+[reference] = Provisions congés
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN200
+[reference] = Provisions congés
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'personnel-fp02',
@@ -2622,7 +8173,81 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = FP02
 [reference] = Feuilles maîtresses-PERSONNEL
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP02
+[reference] = Feuilles maîtresses-PERSONNEL
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP02
+[reference] = Feuilles maîtresses-PERSONNEL
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP02
+[reference] = Feuilles maîtresses-PERSONNEL
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP02
+[reference] = Feuilles maîtresses-PERSONNEL
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP02
+[reference] = Feuilles maîtresses-PERSONNEL
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP02
+[reference] = Feuilles maîtresses-PERSONNEL
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'personnel-fp02-travaux',
@@ -2633,7 +8258,81 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = FP02
 [reference] = Travaux analytiques -Personnel
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP02
+[reference] = Travaux analytiques -Personnel
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP02
+[reference] = Travaux analytiques -Personnel
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP02
+[reference] = Travaux analytiques -Personnel
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP02
+[reference] = Travaux analytiques -Personnel
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP02
+[reference] = Travaux analytiques -Personnel
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP02
+[reference] = Travaux analytiques -Personnel
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'personnel-fp03',
@@ -2644,7 +8343,81 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = FP03
 [reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP03
+[reference] = Revue du Contrôle interne
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP03
+[reference] = Revue du Contrôle interne
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'personnel-fp04',
@@ -2655,7 +8428,81 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = FP04
 [reference] = Revue des techniques comptables
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP04
+[reference] = Revue des techniques comptables
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP04
+[reference] = Revue des techniques comptables
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = FP04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'personnel-nn02',
@@ -2666,7 +8513,81 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = NN02
 [reference] = Feuilles maîtresses-PROVISIONS RISK&CHARGE
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN02
+[reference] = Feuilles maîtresses-PROVISIONS RISK&CHARGE
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN02
+[reference] = Feuilles maîtresses-PROVISIONS RISK&CHARGE
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN02
+[reference] = Feuilles maîtresses-PROVISIONS RISK&CHARGE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN02
+[reference] = Feuilles maîtresses-PROVISIONS RISK&CHARGE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN02
+[reference] = Feuilles maîtresses-PROVISIONS RISK&CHARGE
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN02
+[reference] = Feuilles maîtresses-PROVISIONS RISK&CHARGE
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'personnel-nn02-travaux',
@@ -2677,7 +8598,81 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = NN02
 [reference] = Travaux analytiques -Prov Risk
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN02
+[reference] = Travaux analytiques -Prov Risk
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN02
+[reference] = Travaux analytiques -Prov Risk
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN02
+[reference] = Travaux analytiques -Prov Risk
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN02
+[reference] = Travaux analytiques -Prov Risk
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN02
+[reference] = Travaux analytiques -Prov Risk
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN02
+[reference] = Travaux analytiques -Prov Risk
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'personnel-nn03',
@@ -2688,7 +8683,81 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = NN03
 [reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN03
+[reference] = Revue du Contrôle interne
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN03
+[reference] = Revue du Contrôle interne
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'personnel-nn04',
@@ -2699,8 +8768,82 @@ Contenu de [Contexte de base]
 [Processus] = personnel
 [test] = NN04
 [reference] = Revue des techniques comptables
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN04
+[reference] = Revue des techniques comptables
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN04
+[reference] = Revue des techniques comptables
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = personnel
+[test] = NN04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
             ]
           },
           {
@@ -2717,7 +8860,81 @@ Contenu de [Contexte de base]
 [Processus] = capitaux propres
 [test] = FQ040
 [reference] = Mouvement Résultat net
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ040
+[reference] = Mouvement Résultat net
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ040
+[reference] = Mouvement Résultat net
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ040
+[reference] = Mouvement Résultat net
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ040
+[reference] = Mouvement Résultat net
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ040
+[reference] = Mouvement Résultat net
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ040
+[reference] = Mouvement Résultat net
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'capitaux-fq200',
@@ -2728,7 +8945,81 @@ Contenu de [Contexte de base]
 [Processus] = capitaux propres
 [test] = FQ200
 [reference] = Emprunts et dettes
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ200
+[reference] = Emprunts et dettes
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ200
+[reference] = Emprunts et dettes
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ200
+[reference] = Emprunts et dettes
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ200
+[reference] = Emprunts et dettes
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ200
+[reference] = Emprunts et dettes
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ200
+[reference] = Emprunts et dettes
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'capitaux-fq300',
@@ -2739,7 +9030,81 @@ Contenu de [Contexte de base]
 [Processus] = capitaux propres
 [test] = FQ300
 [reference] = Tableau provision RC
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ300
+[reference] = Tableau provision RC
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ300
+[reference] = Tableau provision RC
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ300
+[reference] = Tableau provision RC
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ300
+[reference] = Tableau provision RC
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ300
+[reference] = Tableau provision RC
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ300
+[reference] = Tableau provision RC
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'capitaux-fq400',
@@ -2750,7 +9115,81 @@ Contenu de [Contexte de base]
 [Processus] = capitaux propres
 [test] = FQ400
 [reference] = Subventions
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ400
+[reference] = Subventions
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ400
+[reference] = Subventions
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ400
+[reference] = Subventions
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ400
+[reference] = Subventions
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ400
+[reference] = Subventions
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ400
+[reference] = Subventions
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'capitaux-fq02',
@@ -2761,7 +9200,81 @@ Contenu de [Contexte de base]
 [Processus] = capitaux propres
 [test] = FQ02
 [reference] = Feuilles maîtresses-CAPITAUX PROPRES
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ02
+[reference] = Feuilles maîtresses-CAPITAUX PROPRES
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ02
+[reference] = Feuilles maîtresses-CAPITAUX PROPRES
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ02
+[reference] = Feuilles maîtresses-CAPITAUX PROPRES
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ02
+[reference] = Feuilles maîtresses-CAPITAUX PROPRES
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ02
+[reference] = Feuilles maîtresses-CAPITAUX PROPRES
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ02
+[reference] = Feuilles maîtresses-CAPITAUX PROPRES
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'capitaux-fq02-travaux',
@@ -2772,7 +9285,81 @@ Contenu de [Contexte de base]
 [Processus] = capitaux propres
 [test] = FQ02
 [reference] = Travaux analytiques capitaux
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ02
+[reference] = Travaux analytiques capitaux
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ02
+[reference] = Travaux analytiques capitaux
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ02
+[reference] = Travaux analytiques capitaux
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ02
+[reference] = Travaux analytiques capitaux
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ02
+[reference] = Travaux analytiques capitaux
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ02
+[reference] = Travaux analytiques capitaux
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'capitaux-fq03',
@@ -2783,7 +9370,81 @@ Contenu de [Contexte de base]
 [Processus] = capitaux propres
 [test] = FQ03
 [reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ03
+[reference] = Revue du Contrôle interne
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ03
+[reference] = Revue du Contrôle interne
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'capitaux-fq04',
@@ -2794,8 +9455,82 @@ Contenu de [Contexte de base]
 [Processus] = capitaux propres
 [test] = FQ04
 [reference] = Revue des techniques comptables
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ04
+[reference] = Revue des techniques comptables
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ04
+[reference] = Revue des techniques comptables
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = capitaux propres
+[test] = FQ04
+[reference] = Revue des techniques comptables
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
             ]
           },
           {
@@ -2918,7 +9653,81 @@ Contenu de [Contexte de base]
 [Processus] = impôt et taxes
 [test] = NN040
 [reference] = Rapprochement de solde TVA - CA
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN040
+[reference] = Rapprochement de solde TVA - CA
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN040
+[reference] = Rapprochement de solde TVA - CA
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN040
+[reference] = Rapprochement de solde TVA - CA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN040
+[reference] = Rapprochement de solde TVA - CA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN040
+[reference] = Rapprochement de solde TVA - CA
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN040
+[reference] = Rapprochement de solde TVA - CA
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'impots-nn200',
@@ -2929,7 +9738,81 @@ Contenu de [Contexte de base]
 [Processus] = impôt et taxes
 [test] = NN200
 [reference] = Test CN
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN200
+[reference] = Test CN
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN200
+[reference] = Test CN
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN200
+[reference] = Test CN
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN200
+[reference] = Test CN
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN200
+[reference] = Test CN
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN200
+[reference] = Test CN
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'impots-nn220',
@@ -2940,7 +9823,81 @@ Contenu de [Contexte de base]
 [Processus] = impôt et taxes
 [test] = NN220
 [reference] = Test IGR
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN220
+[reference] = Test IGR
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN220
+[reference] = Test IGR
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN220
+[reference] = Test IGR
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN220
+[reference] = Test IGR
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN220
+[reference] = Test IGR
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN220
+[reference] = Test IGR
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'impots-nn245',
@@ -2951,7 +9908,81 @@ Contenu de [Contexte de base]
 [Processus] = impôt et taxes
 [test] = NN245
 [reference] = Test IRC
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN245
+[reference] = Test IRC
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN245
+[reference] = Test IRC
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN245
+[reference] = Test IRC
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN245
+[reference] = Test IRC
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN245
+[reference] = Test IRC
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN245
+[reference] = Test IRC
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'impots-nn300',
@@ -2962,7 +9993,81 @@ Contenu de [Contexte de base]
 [Processus] = impôt et taxes
 [test] = NN300
 [reference] = Test IRVM
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN300
+[reference] = Test IRVM
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN300
+[reference] = Test IRVM
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN300
+[reference] = Test IRVM
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN300
+[reference] = Test IRVM
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN300
+[reference] = Test IRVM
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN300
+[reference] = Test IRVM
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'impots-nn02',
@@ -2973,7 +10078,81 @@ Contenu de [Contexte de base]
 [Processus] = impôt et taxes
 [test] = NN02
 [reference] = Feuilles maîtresses-DETTES FISCAL& SOCIAL
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN02
+[reference] = Feuilles maîtresses-DETTES FISCAL& SOCIAL
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN02
+[reference] = Feuilles maîtresses-DETTES FISCAL& SOCIAL
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN02
+[reference] = Feuilles maîtresses-DETTES FISCAL& SOCIAL
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN02
+[reference] = Feuilles maîtresses-DETTES FISCAL& SOCIAL
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN02
+[reference] = Feuilles maîtresses-DETTES FISCAL& SOCIAL
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN02
+[reference] = Feuilles maîtresses-DETTES FISCAL& SOCIAL
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'impots-nn02-revue',
@@ -2984,7 +10163,81 @@ Contenu de [Contexte de base]
 [Processus] = impôt et taxes
 [test] = NN02
 [reference] = Revue analytique Dettes Fiscales
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN02
+[reference] = Revue analytique Dettes Fiscales
 [Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN02
+[reference] = Revue analytique Dettes Fiscales
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN02
+[reference] = Revue analytique Dettes Fiscales
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN02
+[reference] = Revue analytique Dettes Fiscales
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN02
+[reference] = Revue analytique Dettes Fiscales
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN02
+[reference] = Revue analytique Dettes Fiscales
+[Nb de lignes] = 10`
+                  }
+                ]
               },
               {
                 id: 'impots-nn03',
@@ -2995,8 +10248,82 @@ Contenu de [Contexte de base]
 [Processus] = impôt et taxes
 [test] = NN03
 [reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`,
+                modes: [
+                  {
+                    id: 'normal',
+                    label: 'Normal',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN03
+[reference] = Revue du Contrôle interne
 [Nb de lignes] = 10`
-              }
+                  },
+                  {
+                    id: 'papier-travail',
+                    label: 'Papier de travail',
+                    command: `[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN03
+[reference] = Revue du Contrôle interne
+[Papier de travail] = Activate
+[Schéma de calcul] = Activate
+[Cross references- documentaire] = Activate
+[Signature worksheet] = Activate
+[Totalisation] = Activate
+[Revue manger] = Activate
+[Legendes] = Activate
+[Cross references verticale] = Activate
+[Cross references horizontale] = Activate
+[Cross references libre] = Activate
+[Variable 1] = Contenu de [Variable 1]
+[Variable 2] = Contenu de [Variable 2]
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'demo',
+                    label: 'Demo',
+                    command: `[Demo] = Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'avance',
+                    label: 'Avancé',
+                    command: `[Mode] = Avancé
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'methodo',
+                    label: 'Methodo revision',
+                    command: `[Mode] = Avancé
+[Methodo revision] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  },
+                  {
+                    id: 'guide-commandes',
+                    label: 'Guide des commandes',
+                    command: `[Mode] = Avancé
+[Guide des commandes] : Activate
+[Command] = /feuille couverture
+[Processus] = impôt et taxes
+[test] = NN03
+[reference] = Revue du Contrôle interne
+[Nb de lignes] = 10`
+                  }
+                ]
+              },
             ]
           }
         ]
@@ -6261,7 +13588,8 @@ const DemarrerMenu: React.FC<DemarrerMenuProps> = ({ onInsertCommand, disabled =
         id: test.id,
         label: `${test.reference} - ${test.label}`,
         icon: <FileText className="w-4 h-4" />,
-        command: test.command
+        command: test.command,
+        modes: test.modes
       };
       setActiveTest(test);
       setActiveEtape(etapeFromTest);

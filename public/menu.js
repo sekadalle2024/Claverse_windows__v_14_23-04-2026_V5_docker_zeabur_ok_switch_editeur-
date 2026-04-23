@@ -8858,7 +8858,7 @@
 
         try {
           // Appeler le backend Python FINAL (version avec template + contenu complet)
-          const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/export-synthese-cac-final', {
+          const response = await fetch((window.CLARA_BACKEND_URL || 'http://localhost:5000') + '/api/word/export-synthese-cac-final', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(requestData)
